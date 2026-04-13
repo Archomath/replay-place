@@ -21,6 +21,7 @@
 	h1 {
 		font-family: 'Roslindale Deck Narrow Bold Italic';
 		font-size: var(--font-size-5);
+		text-shadow: 1px 1px 2px var(--gray-9);
 	}
 
 	h1 > a {
