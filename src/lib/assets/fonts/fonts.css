@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Roslindale Deck Narrow Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("Roslindale Deck Narrow Bold Italic"),
+    url("Roslindale-DeckNarrowBoldItalic-Testing.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roslindale Variable Display Regular";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("Roslindale Variable Display Regular"),
+    url("RoslindaleVariable-VF[Display]-Testing.woff") format("woff");
+}

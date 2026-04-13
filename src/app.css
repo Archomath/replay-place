@@ -1,0 +1,18 @@
+@import "open-props/style";
+@import "https://unpkg.com/open-props/normalize.dark.min.css";
+@import "open-props/buttons";
+
+:where(html) {
+  --font-custom-body:
+    Roslindale Variable Display Regular, Charter, Bitstream Charter, Sitka Text, Cambria, serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: start;
+  font-family: var(--font-custom-body);
+  min-width: 320px;
+  background-color: var(--gray-8);
+}
