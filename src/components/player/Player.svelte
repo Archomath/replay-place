@@ -12,7 +12,7 @@
 	playsInline
 >
 	<media-provider>
-		<source src={src} type="video/mp4">
+		<source src={src} type="application/x-mpegurl">
 		<!-- <media-poster
 			class="vds-poster"
 			src="https://files.vidstack.io/sprite-fight/poster.webp"
