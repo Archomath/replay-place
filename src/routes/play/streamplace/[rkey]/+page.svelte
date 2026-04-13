@@ -7,6 +7,11 @@
 	let { rkey } = $derived(params);
 	let { video } = $derived(data);
 
+	let createdAt = $derived.by(() => {
+		let date = new Date(video.createdAt);
+		return date.toLocaleString();
+	});
+
 	let src = $derived(getStreamplaceVideoPlaylistUrl(rkey));
 </script>
 
@@ -18,6 +23,9 @@
 		</h2>
 		<p>
 			<a href={`https://bsky.app/profile/${video.creatorDid}`} target="_blank">{video.creatorHandle}</a>
+		</p>
+		<p class="created-at">
+			{createdAt}
 		</p>
 	</div>
 </main>
@@ -56,6 +64,10 @@
 
 	h2 {
 		font-size: var(--font-size-4);
+		margin: var(--size-1) 0;
+	}
+
+	.created-at {
 		margin: var(--size-1) 0;
 	}
 </style>

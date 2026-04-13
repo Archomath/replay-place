@@ -12,6 +12,7 @@ async function toVideo(record: VideoRecord): Promise<VideoData> {
 	const creatorActor = await resolveDid(creatorDid);
 
 	return {
+		createdAt,
 		creatorHandle: creatorActor.handle,
 		creatorDid,
 		duration,
