@@ -28,6 +28,8 @@ async function toVideos(records: Array<VideoRecord>): Promise<Array<VideoData>> 
 		videos.push(await toVideo(record));
 	}
 
+	videos.sort((a, b) => new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime());
+
 	return videos;
 }
 
