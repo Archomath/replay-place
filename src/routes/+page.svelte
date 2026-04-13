@@ -6,20 +6,20 @@
 	let { videos } = $derived(data);
 </script>
 
+<svelte:head>
+	<title>Home | Re:place</title>
+</svelte:head>
+
 <main>
 	<div class="container">
 		<h1>ATmosphereConf 2026 Video Archive</h1>
 		<ul>
 			{#each videos as video}
-				<Card video={video}></Card>
+				<Card video={video} />
 			{/each}
 		</ul>
 	</div>
 </main>
-
-<svelte:head>
-	<title>Home | Re:place</title>
-</svelte:head>
 
 <style>
 	main {
