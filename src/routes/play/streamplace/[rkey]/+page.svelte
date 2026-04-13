@@ -22,7 +22,7 @@
 			{video.title}
 		</h2>
 		<p>
-			<a href={`https://bsky.app/profile/${video.creatorDid}`} target="_blank">{video.creatorHandle}</a>
+			<a href={`https://stream.place/${video.creatorDid}`} target="_blank">{video.creatorHandle}</a>
 		</p>
 		<p class="created-at">
 			{createdAt}

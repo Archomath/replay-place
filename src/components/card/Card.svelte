@@ -29,7 +29,7 @@
 		<a href={`/play/streamplace/${rkey}`}>{video.title}</a>
 	</h2>
 	<p>
-		<a href={`https://bsky.app/profile/${video.creatorDid}`} target="_blank">{video.creatorHandle}</a>
+		<a href={`https://stream.place/${video.creatorDid}`} target="_blank">{video.creatorHandle}</a>
 	</p>
 	<p>
 		{createdAt}&nbsp;&nbsp;•&nbsp;&nbsp;{duration}
