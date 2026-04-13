@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Header from '$components/header/Header.svelte';
+	import Header from '$components/header/Header.svelte';
 
 	import favicon from '$lib/assets/favicon.svg';
 	import '../app.css';
@@ -9,6 +9,7 @@
 </script>
 
 <svelte:head>
+	<title>Re:place</title>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
