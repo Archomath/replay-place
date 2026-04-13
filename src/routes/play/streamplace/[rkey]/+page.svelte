@@ -3,15 +3,22 @@
 	import Player from "$components/player/Player.svelte"
 	import { getStreamplaceVideoPlaylistUrl } from '$lib/api/streamplace';
 
-	let { params }: PageProps = $props();
+	let { data, params }: PageProps = $props();
 	let { rkey } = $derived(params);
+	let { video } = $derived(data);
 
 	let src = $derived(getStreamplaceVideoPlaylistUrl(rkey));
 </script>
 
 <main>
 	<div class="container">
-		<Player title={""} src={src} />
+		<Player title={video.title} src={src} />
+		<h2>
+			{video.title}
+		</h2>
+		<p>
+			<a href={`https://bsky.app/profile/${video.creatorDid}`} target="_blank">{video.creatorHandle}</a>
+		</p>
 	</div>
 </main>
 
@@ -45,5 +52,10 @@
 		.container {
 			width: 1312px;
 		}
+	}
+
+	h2 {
+		font-size: var(--font-size-4);
+		margin: var(--size-1) 0;
 	}
 </style>
