@@ -7,6 +7,10 @@
 		Roslindale Variable Display Regular, Charter, Bitstream Charter, Sitka Text, Cambria, serif;
 }
 
+* {
+	max-inline-size: none;
+}
+
 body {
 	height: 100dvh;
 	display: flex;
