@@ -15,6 +15,10 @@
 	let src = $derived(getStreamplaceVideoPlaylistUrl(rkey));
 </script>
 
+<svelte:head>
+	<title>{video.title} | Re:place</title>
+</svelte:head>
+
 <main>
 	<div class="container">
 		<Player title={video.title} src={src} />

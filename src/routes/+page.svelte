@@ -17,6 +17,10 @@
 	</div>
 </main>
 
+<svelte:head>
+	<title>Home | Re:place</title>
+</svelte:head>
+
 <style>
 	main {
 		display: flex;
