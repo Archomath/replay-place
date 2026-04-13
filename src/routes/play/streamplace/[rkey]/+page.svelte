@@ -26,7 +26,7 @@
 			{video.title}
 		</h2>
 		<p>
-			<a href={`https://stream.place/${video.creatorDid}`} target="_blank">{video.creatorHandle}</a>
+			<a href={`https://stream.place/${video.creatorDid}`} target="_blank" rel="noreferrer">{video.creatorHandle}</a>
 		</p>
 		<p class="created-at">
 			{createdAt}

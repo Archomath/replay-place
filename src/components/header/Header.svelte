@@ -5,6 +5,7 @@
 		</h1>
 	</div>
 	<div class="rhs">
+		<a href="https://github.com/Archomath/replay-place" target="_blank" rel="noreferrer">View Source</a>
 	</div>
 </header>
 
@@ -30,5 +31,10 @@
 	h1 > a {
 		text-decoration: none;
 		color: var(--sand-0);
+	}
+
+	.rhs a {
+		font-size: var(--font-size-1);
+		color: var(--sand-1);
 	}
 </style>
