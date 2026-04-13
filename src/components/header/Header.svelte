@@ -16,6 +16,9 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		flex: 0 0 auto;
+		box-shadow: var(--shadow-1);
+		z-index: var(--layer-2);
 	}
 
 	h1 {

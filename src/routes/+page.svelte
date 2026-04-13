@@ -23,7 +23,7 @@
 		flex-direction: column;
 		align-items: stretch;
 		justify-content: start;
-		flex: 1 0 auto;
+		flex: 1;
 	}
 
 	.container {
@@ -31,10 +31,9 @@
 		flex-direction: column;
 		align-items: stretch;
 		justify-content: start;
-		min-width: none;
 		width: 100%;
 		padding: var(--size-3);
-		flex: 1 0 auto;
+		flex: 1;
 	}
 
 	ul {

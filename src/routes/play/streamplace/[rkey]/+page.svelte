@@ -21,11 +21,10 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: start;
-		flex: 1 0 auto;
+		flex: 1;
 	}
 
 	.container {
-		min-width: none;
 		width: 100%;
 		padding: var(--size-3);
 	}

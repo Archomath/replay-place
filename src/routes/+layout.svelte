@@ -15,4 +15,14 @@
 
 <Header />
 
-{@render children()}
+<div class="container">
+	{@render children()}
+</div>
+
+<style>
+	.container {
+		flex: 1;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+</style>
