@@ -1,5 +1,4 @@
 import { resolveDid } from "$lib/api/identity";
-import "vidstack/bundle";
 import { listAllVideos } from "$lib/api/streamplace";
 import type { VideoRecord } from "$lib/api/types";
 import type { VideoData } from "$lib/types";
